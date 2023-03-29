@@ -19,12 +19,12 @@ function Task(props) {
 
   const onClick = () => setIsClicked(!isClicked);
   useInterval(() => {
-    if (isClicked) api.post("", { core: props.core });
+    if (isClicked) api.post("", { core: props.core, task: props.task });
   }, 1000);
 
   return (
     <div onClick={onClick} style={buttonStr}>
-      CORE NO.{props.core}
+      TASK NO.{props.task}
     </div>
   );
 }
