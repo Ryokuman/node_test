@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useInterval } from "../utils/useInterval";
 import api from "../utils/api";
 
-function Button(props) {
+function Task(props) {
   const [isClicked, setIsClicked] = useState(false);
   const buttonStr = {
     backgroundColor: isClicked ? "#333538" : "#57A0E5",
@@ -29,4 +29,4 @@ function Button(props) {
   );
 }
 
-export { Button };
+export { Task };
