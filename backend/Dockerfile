@@ -1,5 +1,5 @@
 FROM node:16.10.0
 
-WORKDIR /frontend
+WORKDIR /backend
 
-COPY . /frontend
+COPY . /backend
