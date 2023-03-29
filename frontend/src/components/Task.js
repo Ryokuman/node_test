@@ -14,7 +14,7 @@ function Task(props) {
     color: isClicked ? "#57A0E5" : "#333538",
     cursor: "pointer",
     borderRadius: "6px",
-    margin: "10px",
+    margin: "0 10px 0 0",
   };
 
   const onClick = () => setIsClicked(!isClicked);
